@@ -1,26 +1,32 @@
-import { Component } from 'react';
-import Logo from './Logo';
-import Carrito from './Carrito';
+import { Component } from "react";
+import Logo from "./Logo";
+import Carrito from "./Carrito";
 
 const styles = {
-    navbar: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        height: '100px',
-        justifyContent: 'space-between',
-        position: 'relative',
-        padding: '0 50px',
-        boxShadow: '0 2px 3px 0 rgb(0, 0, 0, 0.1)',
-    }
-}
+  navbar: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    height: "100px",
+    justifyContent: "space-between",
+    position: "relative",
+    padding: "0 50px",
+    boxShadow: "0 2px 3px 0 rgb(0, 0, 0, 0.1)",
+  },
+};
+
 class Navbar extends Component {
   render() {
+    const { carrito, esCarritoVisible, mostrarCarrito } = this.props;
     return (
-        <nav style={styles.navbar}>
-            <Logo />
-            <Carrito />
-        </nav>
+      <nav style={styles.navbar}>
+        <Logo />
+        <Carrito
+          carrito={carrito}
+          esCarritoVisible={esCarritoVisible}
+          mostrarCarrito={mostrarCarrito}
+        />
+      </nav>
     );
   }
 }
