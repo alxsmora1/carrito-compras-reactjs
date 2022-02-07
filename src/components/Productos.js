@@ -22,7 +22,7 @@ class Productos extends Component {
                 {productos.map(producto => 
                     <Producto
                     agregarAlCarrito={agregarAlCarrito}
-                    key={producto.namex}
+                    key={producto.name}
                     producto={producto}
                     />
                 )}
