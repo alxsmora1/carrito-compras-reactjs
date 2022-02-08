@@ -7,13 +7,13 @@ import Navbar from "./components/Navbar";
 class App extends Component {
   state = {
     productos: [
-      { name: "Tomate", price: 27, img: "/media/productos/tomate.jpg" },
-      { name: "Cebolla", price: 45, img: "/media/productos/cebolla.jpg" },
-      { name: "Papa", price: 14, img: "/media/productos/papa.jpg" },
-      { name: "Zanahoria", price: 12, img: "/media/productos/zanahoria.png" },
-      { name: "Limon", price: 60, img: "/media/productos/limon.jpg" },
-      { name: "Chicharos", price: 34, img: "/media/productos/arbejas.jpg" },
-      { name: "Lechuga", price: 18, img: "/media/productos/lechuga.jpg" },
+      { name: "Tomate", price: 27, img: "/carrito-compras-reactjs/media/productos/tomate.jpg" },
+      { name: "Cebolla", price: 45, img: "/carrito-compras-reactjs/media/productos/cebolla.jpg" },
+      { name: "Papa", price: 14, img: "/carrito-compras-reactjs/media/productos/papa.jpg" },
+      { name: "Zanahoria", price: 12, img: "/carrito-compras-reactjs/media/productos/zanahoria.png" },
+      { name: "Limon", price: 60, img: "/carrito-compras-reactjs/media/productos/limon.jpg" },
+      { name: "Chicharos", price: 34, img: "/carrito-compras-reactjs/media/productos/arbejas.jpg" },
+      { name: "Lechuga", price: 18, img: "/carrito-compras-reactjs/media/productos/lechuga.jpg" },
     ],
     carrito: [],
     esCarritoVisible: false,
